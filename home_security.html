@@ -1,0 +1,279 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Anthony's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+				<header id="header" class="alt">
+					<a href="index.html" class="logo"><strong>Anthony</strong> <span>Okoro</span></a>
+					<nav class="header-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="About-me.html">About Me</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="Experiences.html">Experiences</a></li>
+							
+						</ul>
+					</nav>
+					
+					<nav>
+						<a href="#menu">Menu</a>
+					</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+							<li><a href="About-me.html">About Me</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="Experiences.html">Experiences</a></li>
+							
+					</ul>
+					<ul class="actions stacked">
+						<li><a href="#" class="button primary fit">Check My Resume</a></li>
+					</ul>
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Smart Home Security System</h1>
+									</header>
+									<span class="image main"><img src="images/homeSe" alt="" /></span>
+									<h2>Project Overview</h2>
+									<p>As part of our coursework in Electrical Engineering Design 1 (ENGI 2203) , under the guidance of Dr. Sarah Stout-Grandy, 
+										P.Eng., our team tackled the challenge of developing a home security system for a model house. Leading a group of four students, 
+										I took charge of ensuring our project's completion within the specified deadlines.</p>
+										<p>The project requirements were multifaceted. We aimed to create a home security system that would demonstrate its status through LEDs, 
+										deliver intrusion alerts via a speaker, and grant users the capability to arm/disarm alarms, modify passwords, and access system statistics. 
+										Additionally, the system had to be designed to set up within a concise timeframe of five minutes, detect intrusions from windows or doors within one minute, and dismantle in just a minute.
+										It's worth noting that our project was constrained to utilizing only the basic materials provided in our team's four design kits. The completion deadline for this endeavor was set for May 29th, 2023.
+										</p>
+										<h2>Assumptions and Constraints</h2>
+										<p>For testing and design purposes, it was assumed that intruders would enter through only one entry point in the house at a time. Furthermore, due to the limited resources available, 
+										this project was constrained to the materials available in the 4 design kits provided. These materials include basic sensors and peripherals to allow for the basic functionality of the home security system. </p>
+									<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/HomeSec.jpg" alt="" data-position="center center" />
+										<p>Finalized Circuit Design</p>
+										<img src="images/ardiuno.jpg" alt="" data-position="center center" />
+									</a>
+									
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+											</header>
+											<h2><center>Sensor Combination Selection</center></h2>
+										<p>Throughout the first week of the system testing and integration stages, multiple sensor combinations were tested in order to come up with the most effective method for quick and accurate intrusion detection.
+										The results from the tests conducted are summarized in the table below:</p>
+											<table>
+												<thead>
+												  <tr>
+													<th>Sensor Combination</th>
+													<th>Pros</th>
+													<th>Cons</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<td>2x PIR Motion Sensors on opposing sides of the house</td>
+													<td>The combination was easy to setup and covered the entire house.</td>
+													<td>Falsely triggered when there is motion outside the house or slight pushes on the locked door. Long calibration time</td>
+												  </tr>
+												  <tr>
+													<td>1x PIR Motion Sensor on the door and 1x Ultrasonic Sensor pointed towards the window.</td>
+													<td>Accurately detected window opening through Ultrasonic Sensor.</td>
+													<td>Falsely triggered from slight door pushes, even with PIR sensor sensitivity adjustments.</td>
+												  </tr>
+												  <tr>
+													<td>1x Ultrasonic Sensor on the door and 1x Hall Effect Sensor on window.</td>
+													<td>Accurately detected window and door opening.</td>
+													<td>Lengthy setup time.</td>
+												  </tr>
+												  <tr>
+													<td>1x Hall Effect Sensor on door and 1x Hall Effect Sensor on window.</td>
+													<td>Quickly and accurately detected door and window opening.</td>
+													<td>Falsely triggers on slight door pushes if placed incorrectly.</td>
+												  </tr>
+												  <!-- Add more rows as needed -->
+												</tbody>
+											  </table>
+											  <p>After careful consideration of the sensor test results, it was decided that the most optimal method for detecting intrusions
+												 would be achieved using two hall effect sensors placed on the door and window. This was the case, due to the quick setup time of the sensors and accurate results.</p>
+											  
+											<!--<ul class="actions">
+												<li><a href="home_security.html" class="button">Learn more</a></li>
+											</ul>-->
+										</div>
+									</div>
+								</section>
+								
+							</section>
+							<section id="two" class="spotlights">
+								<section>
+									
+									
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+											</header>
+											<h2><center>Integration and Testing in Model House</center></h2>
+										<p>With a finalized circuit design synthesized and a user interface developed, the home security system was 
+											built then integrated into the model houses for a series of rigorous testing trials. The test conditions and 
+											outcomes of the different trial runs are summarized in the table below:</p>
+											<table>
+												<thead>
+												  <tr>
+													<th>Trial</th>
+													<th>Conditions</th>
+													<th>Outcomes</th>
+												  </tr>
+												</thead>
+												<tbody>
+												  <tr>
+													<td>1</td>
+													<td>Using model house with no roof, sensors placed at random locations on entry points, and two simple intrusion attempts through door and window respectively.</td>
+													<td>System accurately triggered on intrusion. However, sometimes falsely triggered on door pushes.</td>
+												  </tr>
+												  <tr>
+													<td>2</td>
+													<td>Using model house with no roof and sensor placed near door hinge.</td>
+													<td>No false triggers were observed. System triggered quickly and accurately on intrusion.</td>
+												  </tr>
+												  <tr>
+													<td>3</td>
+													<td>Using model house with roof added after system arming.</td>
+													<td>False trigger occurred due to house morphing during roof placement.</td>
+												  </tr>
+												  <tr>
+													<td>4</td>
+													<td>Using model house with roof added after system arming, and sensor placed closer to door hinge.</td>
+													<td>No false triggers were observed. System triggered quickly and accurately on intrusion.</td>
+												  </tr>
+												  <!-- Add more rows as needed -->
+												</tbody>
+											  </table>
+											 
+											<!--<ul class="actions">
+												<li><a href="home_security.html" class="button">Learn more</a></li>
+											</ul>-->
+										</div>
+									</div>
+									<a class="image">
+										<br><br><br><h4>Software Flowchart</h4>
+										<img src="images/flowchart.jpg" alt="" data-position="center center" />
+										
+										
+									</a>
+								</section>
+								
+							</section>		
+						</section>
+							  
+
+					</div>
+
+				<!-- Contact -->
+					<section id="contact">
+						<div class="inner">
+							<!--<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section class="split">
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-envelope"></span>
+											<h3>Email</h3>
+											<a href="mailto: aokoro@dal.ca">aokoro@dal.ca</a>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-phone"></span>
+											<h3>Phone</h3>
+											<span>438-992-1089</span>
+										</div>
+									</section>
+									<section>
+										<div class="contact-method">
+											<span class="icon solid alt fa-home"></span>
+											<h3>Address</h3>
+											<span>Halifax, NS<br />
+											Canada</span>
+										</div>
+									</section>
+								</section>-->
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<!--<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>-->
+								<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/aokoro25/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+							<ul class="copyright">
+								<li>&copy; 2024</li><li>Design: <a href="">Anthony</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
